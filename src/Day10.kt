@@ -24,12 +24,12 @@ fun main() {
                 sum += 1
                 continue
             }
-            for (dir in Directions.entries) {
+            for (dir in Direction.entries) {
                 val (dx, dy) = when (dir) {
-                    Directions.UP -> Pair(-1, 0)
-                    Directions.DOWN -> Pair(1, 0)
-                    Directions.LEFT -> Pair(0, -1)
-                    Directions.RIGHT -> Pair(0, 1)
+                    Direction.UP -> Pair(-1, 0)
+                    Direction.DOWN -> Pair(1, 0)
+                    Direction.LEFT -> Pair(0, -1)
+                    Direction.RIGHT -> Pair(0, 1)
 
                 }
                 val newX = curx + dx
@@ -54,12 +54,12 @@ fun main() {
             return 1
         }
         var sum = 0
-        for (dir in Directions.entries) {
+        for (dir in Direction.entries) {
             val (dx, dy) = when (dir) {
-                Directions.UP -> Pair(-1, 0)
-                Directions.DOWN -> Pair(1, 0)
-                Directions.LEFT -> Pair(0, -1)
-                Directions.RIGHT -> Pair(0, 1)
+                Direction.UP -> Pair(-1, 0)
+                Direction.DOWN -> Pair(1, 0)
+                Direction.LEFT -> Pair(0, -1)
+                Direction.RIGHT -> Pair(0, 1)
 
             }
             val newX = x + dx
@@ -112,6 +112,3 @@ fun main() {
     part2(input).println()
 }
 
-enum class Directions {
-    UP, DOWN, LEFT, RIGHT
-}

@@ -127,6 +127,3 @@ fun main() {
     part2(input).println()
 }
 
-enum class Direction {
-    UP, DOWN, LEFT, RIGHT
-}
